@@ -1,33 +1,17 @@
-#watchAgain{
+function restartExperience(){
 
-    margin-top:30px;
+    // Hide ending screen
+    document.getElementById("endingScreen").classList.remove("show");
 
-    padding:18px 45px;
+    // Scroll to top
+    window.scrollTo({
+        top:0,
+        behavior:"instant"
+    });
 
-    border:none;
-
-    border-radius:50px;
-
-    background:linear-gradient(45deg,#ff4f8b,#ff9ec8);
-
-    color:#fff;
-
-    font-size:20px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-    box-shadow:0 12px 30px rgba(255,105,180,.35);
-
-}
-
-#watchAgain:hover{
-
-    transform:translateY(-5px) scale(1.05);
-
-    box-shadow:0 20px 40px rgba(255,105,180,.5);
+    // Restart page
+    setTimeout(()=>{
+        location.reload();
+    },300);
 
 }
