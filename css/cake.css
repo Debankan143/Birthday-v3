@@ -1,0 +1,46 @@
+.cake-container{
+    position:relative;
+    display:inline-block;
+    margin:30px 0;
+}
+
+.cake-image{
+    width:350px;
+    max-width:90%;
+    display:block;
+}
+
+.candles{
+    position:absolute;
+    top:30px;              /* Adjust according to your cake image */
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:42px;              /* Adjust if candle positions don't match */
+}
+
+.candle{
+    width:8px;
+    height:45px;
+    background:#fff;
+    border-radius:5px;
+    position:relative;
+}
+
+.flame{
+    width:12px;
+    height:18px;
+    background:orange;
+    border-radius:50% 50% 50% 50%;
+    position:absolute;
+    top:-18px;
+    left:50%;
+    transform:translateX(-50%);
+    box-shadow:0 0 15px orange;
+}
+
+.flame.off{
+    opacity:0;
+    transform:translateX(-50%) scale(0);
+    transition:.4s;
+}

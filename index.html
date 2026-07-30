@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&family=Dancing+Script:wght@500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/garden.css">
+<link rel="stylesheet" href="css/cake.css">
+<link rel="stylesheet" href="css/teddy.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <button id="musicBtn">🎵 Play Music</button>
+    <div id="cloudContainer"></div>
+
+<div id="butterflyContainer"></div>
+
+<div id="petalContainer"></div>
+
+<div id="heartContainer"></div>
+<div class="background-glow">
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+    <div class="glow glow3"></div>
+</div>
+
+    <!-- ================= LOADER ================= -->
+
+   <div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-heart">❤️</div>
+
+        <h1>Creating Something Magical...</h1>
+
+        <p>Please wait a moment ✨</p>
+
+        <div class="loading-bar">
+
+            <div class="loading-fill"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section id="intro">
+
+        <div class="overlay"></div>
+
+        <div class="intro-content">
+
+
+            <h1>Happy Birthday</h1>
+
+            <h2 id="girl-name">Beautiful ❤️</h2>
+
+            <p>
+                Today is not just another day...
+                It is the day someone amazing came into this world.
+            </p>
+
+            <button id="startJourney">
+                Begin Your Journey
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= TEDDY ================= -->
+
+    <section id="teddy">
+
+        <div class="teddy-container">
+
+            <img
+                src="assets/images/teddy.png"
+                alt="Teddy Bear"
+                class="teddy-image">
+
+            <div class="speech-box">
+
+                <h2>Hello Beautiful 🌸</h2>
+
+                <p>
+                    Ready for your magical birthday journey?
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= LETTER ================= -->
+
+    <section id="letter">
+
+        <div class="letter-box">
+
+            <h2>💌 A Letter For You</h2>
+
+            <div id="typewriter">
+
+               Dear Beautiful ❤️,
+
+Today is all about celebrating someone truly special.
+
+May your smile always shine brighter than the stars,
+your heart always stay full of happiness,
+and every dream you have find its way to reality.
+
+Thank you for simply being you.
+
+Happy Birthday, Beautiful.
+
+With lots of love,❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= GALLERY ================= -->
+<section id="gallery">
+
+    <h1>📸 Beautiful Memories</h1>
+
+    <p>Every picture tells a beautiful story ❤️</p>
+
+    <div class="gallery-grid">
+
+        <div class="photo-card">
+            <img src="assets/photos/photo1.jpeg" alt="Memory 1">
+            <span>🌸 The Beautiful Smile</span>
+        </div>
+
+        <div class="photo-card">
+            <img src="assets/photos/photo2.jpeg" alt="Memory 2">
+            <span>💖 A Precious Moment</span>
+        </div>
+
+        <div class="photo-card">
+            <img src="assets/photos/photo3.jpeg" alt="Memory 3">
+            <span>✨ Forever Beautiful</span>
+        </div>
+
+        <div class="photo-card">
+            <img src="assets/photos/photo4.jpeg" alt="Memory 4">
+            <span>🎂 Happy Birthday</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Fullscreen Viewer -->
+
+<div id="photoViewer">
+
+    <span id="closeViewer">&times;</span>
+
+    <img id="viewerImage" src="" alt="">
+
+    <h2 id="viewerCaption"></h2>
+
+</div>
+
+
+<!-- Fullscreen Viewer -->
+
+<div id="photoViewer">
+
+    <span id="closeViewer">&times;</span>
+
+    <img id="viewerImage">
+
+    <h2 id="viewerCaption"></h2>
+
+</div>
+
+
+
+   <!-- ================= FLOWER GARDEN ================= -->
+
+<section id="garden">
+
+    <h1>🌷 Magical Flower Garden 🌷</h1>
+
+    <p>Touch a flower to reveal a birthday wish</p>
+
+    <div class="flowers">
+
+        <button class="flower" data-message="🌸 May your smile brighten every day!">🌸</button>
+
+        <button class="flower" data-message="💖 Wishing you endless happiness and love!">🌺</button>
+
+        <button class="flower" data-message="✨ May every dream of yours come true!">🌼</button>
+
+        <button class="flower" data-message="🌹 Keep shining like the beautiful person you are!">🌹</button>
+
+        <button class="flower" data-message="🎂 Happy Birthday! May this year be unforgettable!">🌷</button>
+
+    </div>
+
+    <div id="wishBox">
+
+        <h2>Your Birthday Wish</h2>
+
+        <p id="wishText">
+            Click a flower...
+        </p>
+
+    </div>
+
+</section>
+
+<!----==cake==--->
+<section id="cake">
+
+    <h1>🎂 Make a Birthday Wish</h1>
+
+    <div class="cake-container">
+
+        <!-- Cake Image -->
+        <img src="assets/images/cake.png" alt="Birthday Cake" class="cake-image">
+
+        <!-- Candles -->
+        <div class="candles">
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button id="blowCandles">
+        💨 Blow Candles
+    </button>
+
+    <h2 id="cakeMessage">
+        🎉 Happy Birthday ❤️
+    </h2>
+
+</section>
+
+<section id="gift">
+
+    <h1>🎁 A Sweet Surprise For You</h1>
+
+    <p>Click the gift box to reveal your surprise 🍫</p>
+
+    <div id="giftBox">
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-body"></div>
+
+        <!-- Golden Light -->
+        <div class="gift-glow"></div>
+
+        <!-- Chocolate -->
+        <img src="assets/images/chocolate.png"
+             id="chocolate"
+             alt="Chocolate">
+
+    </div>
+
+    <div id="giftMessage">
+
+        <h2>🍫 Sweet Surprise ❤️</h2>
+
+        <p>
+
+            A little chocolate for the sweetest person.
+
+            May your birthday be filled with
+            happiness,
+            smiles,
+            love,
+            and lots of sweet memories.
+
+            ❤️ Happy Birthday ❤️
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+//night section 
+<section id="night">
+
+    <div id="stars"></div>
+    <div id="fireworks"></div>
+
+    <div class="final-card">
+
+        <h1>🎉 Happy Birthday ❤️</h1>
+
+        <h2 class="glow">
+            You are truly one of a kind ✨
+        </h2>
+
+        <p>
+
+    শুভ জন্মদিন! 🎂❤️
+    তোমার জীবনের প্রতিটি দিন যেন হাসি, ভালোবাসা আর সুখে ভরে ওঠে।
+    সব স্বপ্ন যেন একে একে সত্যি হয়।
+    অনেক ভালো থেকো। 🌸
+
+
+        </p>
+
+        <button id="celebrateBtn">
+            🎆 Celebrate Forever
+        </button>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        Hope you enjoyed this magical birthday journey 💕😊.
+
+    </footer>
+
+
+<div id="confetti-container"></div>
+
+    <!-- JavaScript -->
+
+<!-- JavaScript -->
+
+<script src="js/effects.js"></script>
+<script src="js/cake.js"></script>
+<script src="js/gift.js"></script>
+<script src="js/fireworks.js"></script>
+<script src="js/music.js"></script>
+<script src="js/effects2.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ending.js"></script>
+<script src="js/cursor.js"></script>
+
+<!-- ================= GRAND FINALE ================= -->
+
+<div id="endingScreen">
+
+    <div class="ending-card">
+
+        <h1>🎉 Happy Birthday ❤️</h1>
+
+        <h2>Thank You For Visiting</h2>
+
+        <p>
+
+            May your life always be filled with
+            happiness, success,
+            beautiful memories,
+            endless smiles,
+            and lots of love.
+
+        </p>
+
+        <button id="watchAgain">
+            🔄 Watch Again
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
