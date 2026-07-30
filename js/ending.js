@@ -1,25 +1,33 @@
-const ending = document.getElementById("endingScreen");
+#watchAgain{
 
-window.addEventListener("scroll",()=>{
+    margin-top:30px;
 
-    if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 10){
+    padding:18px 45px;
 
-        ending.classList.add("show");
+    border:none;
 
-    }
+    border-radius:50px;
 
-});
+    background:linear-gradient(45deg,#ff4f8b,#ff9ec8);
 
-document.getElementById("watchAgain").addEventListener("click",()=>{
+    color:#fff;
 
-    window.scrollTo({
+    font-size:20px;
 
-        top:0,
+    font-weight:600;
 
-        behavior:"smooth"
+    cursor:pointer;
 
-    });
+    transition:.35s;
 
-    ending.classList.remove("show");
+    box-shadow:0 12px 30px rgba(255,105,180,.35);
 
-});
+}
+
+#watchAgain:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:0 20px 40px rgba(255,105,180,.5);
+
+}
