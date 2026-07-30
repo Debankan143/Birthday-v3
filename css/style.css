@@ -177,25 +177,10 @@ button:hover{
 /* ===============================
    INTRO
 ==================================*/
-
 #intro{
-
-    background:
-
-    linear-gradient(
-
-    rgba(255,255,255,.45),
-
-    rgba(255,255,255,.45)
-
-    ),
-
-    url("../assets/images/backgrounds/intro.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
+    background: linear-gradient(135deg, #ffeaf4, #fff5fb, #ffffff);
+    background-size: cover;
+    background-position: center;
 }
 
 .intro-content{
